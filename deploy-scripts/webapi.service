@@ -3,7 +3,7 @@ Description=deployement
 
 [Service]
 WorkingDirectory=/var/www/
-ExecStart=/usr/bin/dotnet /var/www/12219-API.dll
+ExecStart=/usr/bin/dotnet /var/www/DSCC.CW1.12219.API.dll
 Restart=always
 
 RestartSec=10
