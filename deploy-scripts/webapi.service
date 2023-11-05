@@ -1,5 +1,5 @@
 [Unit]
-Description=deployement
+Description=Some Desc
 
 [Service]
 WorkingDirectory=/var/www/
