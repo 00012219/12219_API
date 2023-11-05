@@ -15,12 +15,14 @@ namespace DSCC.CW1._12219.API.Controllers
             _personService = personService;
         }
 
+        // this is the endpoint that accepts the requests for fetching all the person data
         [HttpGet]
         public IActionResult GetAllPersons()
         {
             return Ok(_personService.GetAll());
         }
 
+        //this is the endpoint for deleting the single person data
         [HttpDelete("{id}")]
         public IActionResult DeletePerson(int id)
         {
@@ -34,6 +36,7 @@ namespace DSCC.CW1._12219.API.Controllers
             return Ok(person);
         }
 
+        //this is the endpoint for creating the single person data
         [HttpPost]
         public IActionResult CreatePerson(Person person) 
         {
@@ -46,6 +49,7 @@ namespace DSCC.CW1._12219.API.Controllers
             return Ok(person);
         }
 
+        //this is the endpoint for updating the single person data
         [HttpPut("{id}")]
         public IActionResult UpdatePerson(int id, Person updatingPerson) 
         {
@@ -72,6 +76,7 @@ namespace DSCC.CW1._12219.API.Controllers
             return Ok(existingOrder);
         }
 
+        //this is the endpoint for getting the single person data
         [HttpGet("{id}")]
         public IActionResult GetPerson(int id)
         {
